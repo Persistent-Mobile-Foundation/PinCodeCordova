@@ -1,0 +1,7 @@
+{
+  "name": "PMF",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

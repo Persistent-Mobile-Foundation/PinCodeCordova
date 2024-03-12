@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>PMF Pincode Cordova</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="height: 12rem;text-align: center;" >
+    <ion-img style="width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;" src="../../assets/images/side-menu-logo.jpeg"
+      alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+  </div>
+  <div style="margin-top: -3rem;">
+    <!-- <ion-card *ngFor="let homeOptions of items" mode="ios">
+      <ion-card-content>
+        {{homeOptions.title}}
+      </ion-card-content>
+      <div class="ion-padding">
+      <ion-button (click)="open_feature(homeOptions.id)" fill="solid">  {{homeOptions.buttontext}}</ion-button>
+    </div>
+    </ion-card> -->
+    <!-- <ion-list mode="ios">
+      <div *ngFor="let homeOptions of items" >
+      <ion-item style="height: 4rem;    margin-bottom: 1rem;" (click)="open_feature(homeOptions.id)">
+        <ion-icon aria-hidden="true" [name]="homeOptions.icon" slot="start"></ion-icon>
+        <ion-label style="    font-size: 20px;
+        font-weight: 600;">{{homeOptions.title}}</ion-label>
+      </ion-item>
+    </div>
+    </ion-list> -->
+      <ion-card *ngFor="let homeOptions of items" mode="ios">
+      <ion-card-content style="padding:10px">
+        <ion-item style="">
+          <ion-icon aria-hidden="true" [name]="homeOptions.icon" slot="start"></ion-icon>
+          <ion-label style="    font-size: 20px;
+          font-weight: 600;">{{homeOptions.title}}</ion-label>
+        </ion-item>
+      </ion-card-content>
+      <div style="padding: 10px;">
+      <ion-button size="small" (click)="open_feature(homeOptions.id)" fill="solid">  {{homeOptions.buttontext}}</ion-button>
+    </div>
+    </ion-card>
+  </div>
+</ion-content>

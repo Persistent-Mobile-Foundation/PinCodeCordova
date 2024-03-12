@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">ABC Bank</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card mode="ios" style="background: linear-gradient(90deg, rgba(24,21,64,1) 0%, rgba(253,148,90,1) 35%, rgba(193,122,83,1) 100%);    margin: 2rem;">
+    <ion-card-header>
+      <ion-card-subtitle style="color: white;">Welcome , Michael Perry</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content style="text-align: center;">
+      <!-- <ion-button (click)="getBalance()">Fetch balance</ion-button><br> -->
+    <label style="color: white;">Savings A/C</label><br>
+    <div style="margin-bottom: 1rem;">
+    <label style="font-weight: bold;color: white;">124923741234</label></div>
+    <ion-button (click)="getBalance()" fill="outline" color="light" size="small" style="margin-bottom: 1rem;">View Balance</ion-button><br>
+    <label style="color: white;font-weight: bold;" [innerHTML]="balance"></label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
